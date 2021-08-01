@@ -3,21 +3,21 @@
 
 /* -------------- 本区域样式请勿更改 --------------- */
 body {
-	background: #191b2a;
+	background: #fff;
 }
 #top {
 	background: #262837;
 	width: 100%;
-	height: 80px;
+	height: 50px;
 	position: fixed;
 }
 #logo {
 	width: 280px;
-	height: 80px;
+	height: 50px;
 	color: #bfbfbf;
 	font-weight: bold;
-	font-size: 30px;
-	line-height: 80px;
+	font-size: 25px;
+	line-height: 50px;
 	text-align: center;
 	float: left
 }
