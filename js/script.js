@@ -11,7 +11,7 @@ window.onload = function () {
     var txt_opt = document.getElementById("txt_opt"); //获取文本输出框
 
     btn.onclick = function make() {
-        length = document.getElementById("ipt_len").value; //密码长度
+        length = document.getElementById("ipt_len").value-1; //密码长度
         switch (true) {
             //单项
             case num.checked && !upA.checked && !lowA.checked && !special.checked: //仅当数字被选中
@@ -74,7 +74,8 @@ window.onload = function () {
             var ram = Math.floor(Math.random()*(endnum-startnum+1)+startnum);
             str += data[ram];
         }
-        txt_opt.innerHTML = "结果为：" +  str;
+        // txt_opt.innerHTML = "结果为：" +  str;
+        txt_opt.value=str;
         str = "";
     }
     //特殊情况
@@ -88,7 +89,8 @@ window.onload = function () {
             }
             str += data[ram];
         }
-        txt_opt.innerHTML = "结果为：" + str;
+        // txt_opt.innerHTML = "结果为：" + str;
+        txt_opt.value=str;
         str = "";
     }
 
